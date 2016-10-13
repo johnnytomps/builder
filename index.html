@@ -96,176 +96,188 @@
 	</script>
 	
 	<script id="pricingPlan" type="text/x-custom-template">
-		<div class="row" id="update-pricing-plan-page" style="display: none;">
-			<h1>Let's Update Pricing Plan(s)!</h1>
-			<ul class="collapsible popout" data-collapsible="accordion">
-				<li>
-					<div class="update-header collapsible-header"><i class="material-icons">important_devices</i>Delivery Capabilities</div>
-					<div class="collapsible-body clearfix">
-						<form action="#">
-							<div class="dc-select-left">
-								<!-- PC/Mac -->
-								<div class="dc-select">
-									<input type="checkbox" id="silverlight-HD-streaming" />
-									<label for="silverlight-HD-streaming">Silverlight HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="silverlight-SD-streaming" />
-									<label for="silverlight-SD-streaming">Silverlight SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="silverlight-HD-download" />
-									<label for="silverlight-HD-download">Silverlight HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="silverlight-SD-download" />
-									<label for="mac-HD-streaming">Silverlight SD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="mac-HD-streaming" />
-									<label for="mac-HD-streaming">Mac HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="mac-SD-streaming" />
-									<label for="mac-SD-streaming">Mac SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="mac-HD-download" />
-									<label for="mac-HD-download">Mac HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="mac-SD-download" />
-									<label for="mac-HD-streaming">Mac SD Download</label>
-								</div>
+        <div id="update-pricing-plan-page" class="row" style="display: none;">
+            <h1>Pricing Plan Update</h1>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">important_devices</i>
+                        Delivery Capabilities
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="dc-select-left">
+                                <!-- PC/Mac -->
+                                <div class="dc-select">
+                                    <input type="checkbox" id="silverlight-HD-streaming" />
+                                    <label for="silverlight-HD-streaming">Silverlight HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="silverlight-SD-streaming"/>
+                                    <label for="silverlight-SD-streaming">Silverlight SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="silverlight-HD-download"/>
+                                    <label for="silverlight-HD-download">Silverlight HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="silverlight-SD-download" />
+                                    <label for="mac-HD-streaming">Silverlight SD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="mac-HD-streaming" />
+                                    <label for="mac-HD-streaming">Mac HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="mac-SD-streaming"/>
+                                    <label for="mac-SD-streaming">Mac SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="mac-HD-download"/>
+                                    <label for="mac-HD-download">Mac HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="mac-SD-download" />
+                                    <label for="mac-HD-streaming">Mac SD Download</label>
+                                </div>
 
-								<!-- Android -->
-								<div class="dc-select">
-									<input type="checkbox" id="android-phone-HD-streaming" />
-									<label for="android-phone-HD-streaming">Android Phone HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-phone-SD-streaming" />
-									<label for="android-phone-SD-streaming">Android Phone SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-phone-HD-download" />
-									<label for="android-phone-HD-download">Android Phone HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-phone-SD-download" />
-									<label for="android-phone-HD-streaming">Android Phone SD Download</label>
-								</div>
+                                <!-- Android -->
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-phone-HD-streaming" />
+                                    <label for="android-phone-HD-streaming">Android Phone HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-phone-SD-streaming"/>
+                                    <label for="android-phone-SD-streaming">Android Phone SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-phone-HD-download"/>
+                                    <label for="android-phone-HD-download">Android Phone HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-phone-SD-download" />
+                                    <label for="android-phone-HD-streaming">Android Phone SD Download</label>
+                                </div>
 
-							</div>
-							<div class="dc-select-right">
-								<!-- Android -->
-								<div class="dc-select">
-									<input type="checkbox" id="android-tablet-HD-streaming" />
-									<label for="android-tablet-HD-streaming">Android Tablet HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-tablet-SD-streaming" />
-									<label for="android-tablet-SD-streaming">Android Tablet SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-tablet-HD-download" />
-									<label for="android-tablet-HD-download">Android Tablet HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="android-tablet-SD-download" />
-									<label for="android-tablet-HD-streaming">Android Tablet SD Download</label>
-								</div>
-								<!-- iOS -->
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPhone-HD-streaming" />
-									<label for="apple-iPhone-HD-streaming">Apple iPhone HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPhone-SD-streaming" />
-									<label for="apple-iPhone-SD-streaming">Apple iPhone SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPhone-HD-download" />
-									<label for="apple-iPhone-HD-download">Apple iPhone HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPhone-SD-download" />
-									<label for="apple-iPhone-HD-streaming">Apple iPhone SD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPad-HD-streaming" />
-									<label for="apple-iPad-HD-streaming">Apple iPad HD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPad-SD-streaming" />
-									<label for="apple-iPad-SD-streaming">Apple iPad SD Streaming</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPad-HD-download" />
-									<label for="apple-iPad-HD-download">Apple iPad HD Download</label>
-								</div>
-								<div class="dc-select">
-									<input type="checkbox" id="apple-iPad-SD-download" />
-									<label for="apple-iPad-HD-streaming">Apple iPad SD Download</label>
-								</div>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li>
-					<div class="update-header collapsible-header"><i class="material-icons">lightbulb_outline</i>Options</div>
-					<div class="collapsible-body">
-						<form action="#">
-							<!-- Pricing options -->
-							<div class="pricing-option-select">
-								<input type="checkbox" id="is-standalone" />
-								<label for="is-standalone">Is Standalone</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="suppress-advertisements" />
-								<label for="suppress-advertisements">Suppress Advertisements</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="user-only" />
-								<label for="user-only">User Only</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="license-expiration-days" />
-								<label for="license-expiration-days">License Expiration Days</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="requires-authentication" />
-								<label for="requires-authentication">Requires Authentication</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="is-retired" />
-								<label for="is-retired">Is Retired</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="license-first-play-expiration-days" />
-								<label for="license-first-play-expiration-days">License First Play Expiration Days</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="requires-external-authorization" />
-								<label for="requires-external-authorization">Requires External Authorization</label>
-							</div>
-							<div class="pricing-option-select">
-								<input type="checkbox" id="entitlement-precedence" />
-								<label for="entitlement-precedence">Entitlement Precedence</label>
-							</div>
-						</form>
-					</div>
-				</li>
-				<li>
-					<div class="update-header collapsible-header"><i class="material-icons">supervisor_account</i>Targeting Segments</div>
-					<div class="collapsible-body">
-						<input id="targeting-segment-id" type="text" class="validate">
-						<label for="targeting-segment-id">Targeting Segment Id</label>
-					</div>
-				</li>
-			</ul>
-			<button class="btn waves-effect waves-light">Submit</button>
-		</div>
+                            </div>
+                            <div class="dc-select-right">
+                                <!-- Android -->
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-tablet-HD-streaming" />
+                                    <label for="android-tablet-HD-streaming">Android Tablet HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-tablet-SD-streaming"/>
+                                    <label for="android-tablet-SD-streaming">Android Tablet SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-tablet-HD-download"/>
+                                    <label for="android-tablet-HD-download">Android Tablet HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="android-tablet-SD-download" />
+                                    <label for="android-tablet-HD-streaming">Android Tablet SD Download</label>
+                                </div>
+                                <!-- iOS -->
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPhone-HD-streaming" />
+                                    <label for="apple-iPhone-HD-streaming">Apple iPhone HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPhone-SD-streaming"/>
+                                    <label for="apple-iPhone-SD-streaming">Apple iPhone SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPhone-HD-download"/>
+                                    <label for="apple-iPhone-HD-download">Apple iPhone HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPhone-SD-download" />
+                                    <label for="apple-iPhone-HD-streaming">Apple iPhone SD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPad-HD-streaming" />
+                                    <label for="apple-iPad-HD-streaming">Apple iPad HD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPad-SD-streaming"/>
+                                    <label for="apple-iPad-SD-streaming">Apple iPad SD Streaming</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPad-HD-download"/>
+                                    <label for="apple-iPad-HD-download">Apple iPad HD Download</label>
+                                </div>
+                                <div class="dc-select">
+                                    <input type="checkbox" id="apple-iPad-SD-download" />
+                                    <label for="apple-iPad-HD-streaming">Apple iPad SD Download</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">lightbulb_outline</i>
+                        Options
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body">
+                        <form action="#">
+                            <!-- Pricing options -->
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="is-standalone" />
+                                <label for="is-standalone">Is Standalone</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="suppress-advertisements" />
+                                <label for="suppress-advertisements">Suppress Advertisements</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="user-only" />
+                                <label for="user-only">User Only</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="license-expiration-days" />
+                                <label for="license-expiration-days">License Expiration Days</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="requires-authentication" />
+                                <label for="requires-authentication">Requires Authentication</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="is-retired" />
+                                <label for="is-retired">Is Retired</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="license-first-play-expiration-days" />
+                                <label for="license-first-play-expiration-days">License First Play Expiration Days</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="requires-external-authorization" />
+                                <label for="requires-external-authorization">Requires External Authorization</label>
+                            </div>
+                            <div class="pricing-option-select">
+                                <input type="checkbox" id="entitlement-precedence" />
+                                <label for="entitlement-precedence">Entitlement Precedence</label>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">supervisor_account</i>
+                        Targeting Segments
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body">
+                        <input id="targeting-segment-id" type="text" class="validate">
+                        <label for="targeting-segment-id">Targeting Segment Id</label>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn waves-effect waves-light">Submit</button>
+        </div>
 	</script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
