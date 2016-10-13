@@ -68,19 +68,35 @@
             <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Let's get started!</a>
             <!-- Dropdown Structure -->
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Products</a></li>
+                <li onclick="navigate('search', 'products');"><a href="#!">Products</a></li>
                 <li class="divider"></li>
-                <li><a href="#!">Content Items</a></li>
+                <li onclick="navigate('search', 'contentItems');"><a>Content Items</a></li>
                 <li class="divider"></li>
-                <li onclick="navigate('pricingPlan');"><a>Pricing Plans</a></li>
+                <li onclick="navigate('search', 'pricingPlan');"><a>Pricing Plans</a></li>
                 <li class="divider"></li>
-                <li><a href="#!">Subscribers</a></li>
+                <li onclick="navigate('search', 'subscribers');"><a>Subscribers</a></li>
             </ul>
+        </div>
+	</script>
+
+	<script id="search" type="text/x-custom-template">
+        <div class="row" id="define-selection-page" style="display: none;">
+            <h1>Which items would you like to update?</h1>
+
+            <div class="row">
+                <form class="col s12">
+                    <div class=""search-wrapper card">
+                        <input id="search">
+                    </div>
+                </form>
+            </div>
+            <button class="btn waves-effect waves-light" onclick="navigate(searchSubmitTemplate);">Submit</button>
+
         </div>
 	</script>
 	
 	<script id="pricingPlan" type="text/x-custom-template">
-		<div id="update-pricing-plan-page" style="display: none;">
+		<div class="row" id="update-pricing-plan-page" style="display: none;">
 			<h1>Let's Update Pricing Plan(s)!</h1>
 			<ul class="collapsible popout" data-collapsible="accordion">
 				<li>

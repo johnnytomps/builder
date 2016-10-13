@@ -3,10 +3,12 @@ $(document).ready(function () {
 });
 
 var currentTemplate = '',
+	searchSubmitTemplate = '',
 	templateContainer = $('#template');
 
-function navigate(template) {
+function navigate(template, searchSubmitState) {
 	currentTemplate = template;
+	searchSubmitTemplate = searchSubmitState;
 	templateContainer.effect('slide', {
 		direction: 'left',
 		mode: 'hide',
@@ -72,6 +74,10 @@ function selectType() {
 		belowOrigin: false, // Displays dropdown below the button
 		alignment: 'left' // Displays dropdown with edge aligned to the left of button
 	});
+};
+
+function search() {
+	
 };
 
 function pricingPlan() {
