@@ -21,7 +21,9 @@ function navigate(template, searchSubmitState) {
 				mode: 'show'
 			}, 250);
 			$(document).unbind();
-			window[template]();
+			if (typeof window[template] === 'function') {
+				window[template]();	
+			}			
 		}
 	})
 };
