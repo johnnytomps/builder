@@ -10,6 +10,7 @@
 
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -18,18 +19,21 @@
 <body>
 
     <div class="container">
-        <div id="select-type-page">
-            <h1>What would you like to update?<h1>
-            <!-- Dropdown Trigger -->
-            <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Let's get started!</a>
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">Pricing Plans</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Content Items</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Products</a></li>
+        <div id="update-pricing-plan-page">
+            <h1>Let's Update Pricing Plan(s)!</h1>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="update-header collapsible-header"><i class="material-icons">perm_media</i>Content Items</div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="media_quality"></div>
+                            <div class="item_type"></div>
+                            <div class="item_subtype"></div>
+                        </form>
+                    </div>
+                </li>
             </ul>
+            <button class="btn waves-effect waves-light">Submit</button>
         </div>
     </div>
 

@@ -125,9 +125,30 @@ h1 {
     margin-left: 15px;
 }
 
-
-
-
+/*** Confirmation Page ***/
+#confirmation-page {
+    position: fixed;
+    width: 800px;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -400px; /* Negative half of width. */
+    text-align: center;
+}
+#confirmation-page button{
+    margin-top: 15px;
+}
+/*** Revert Page ***/
+#revert-page {
+    position: fixed;
+    width: 800px;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -400px; /* Negative half of width. */
+    text-align: center;
+}
+#revert-page button{
+    margin-top: 15px;
+}
 
 
 
