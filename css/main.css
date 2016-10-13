@@ -91,8 +91,26 @@ textarea {
     margin-top: 50px;
     margin-left: -400px; /* Negative half of width. */
 }
-.dc-select {
+#update-pricing-plan-page .collapsible-body {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.dc-select-left,
+.dc-select-right {
+    width: 50%;
     float: left;
+}
+.dc-select {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 15px;
+}
+.pricing-option-select {
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 15px;
 }
 
 
