@@ -159,6 +159,10 @@ h1 {
 #update-content-item-page button{
     margin-top: 15px;
 }
+.media-quality div,
+.instream-cc div{
+    display: inline;
+}
 
 /*** Confirmation Page ***/
 #confirmation-page {
