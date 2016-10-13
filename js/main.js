@@ -3,10 +3,12 @@ $(document).ready(function () {
 });
 
 var currentTemplate = '',
+	searchSubmitTemplate = '',
 	templateContainer = $('#template');
 
-function navigate(template) {
+function navigate(template, searchSubmitState) {
 	currentTemplate = template;
+	searchSubmitTemplate = searchSubmitState;
 	templateContainer.effect('slide', {
 		direction: 'left',
 		mode: 'hide',
@@ -25,6 +27,8 @@ function navigate(template) {
 };
 
 function login() {
+	Materialize.updateTextFields();
+	$('#password').characterCounter();
 	$(".login-form").validate({
 		rules: {
 			login: {
@@ -69,5 +73,15 @@ function selectType() {
 		gutter: 0, // Spacing from edge
 		belowOrigin: false, // Displays dropdown below the button
 		alignment: 'left' // Displays dropdown with edge aligned to the left of button
+	});
+};
+
+function search() {
+	
+};
+
+function pricingPlan() {
+	$('.collapsible').collapsible({
+		accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
 	});
 };
