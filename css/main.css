@@ -56,10 +56,44 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*** General styles ***/
 
+.container h1 {
+    text-align: center;
+    font-weight: bold;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.dropdown-button {
+    font-size: 24px;
+}
+.update-header {
+    text-align: left;
+    font-size: 18px;
+}
+/*** Select page style ***/
+#select-type-page {
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -400px; /* Negative half of width. */
+}
 
-
-
+/*** Update pricing plan page ***/
+#update-pricing-plan-page {
+    position: fixed;
+    width: 800px;
+    left: 50%;
+    margin-top: 50px;
+    margin-left: -400px; /* Negative half of width. */
+}
+.dc-select {
+    float: left;
+}
 
 
 
