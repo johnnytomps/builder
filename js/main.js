@@ -28,3 +28,8 @@ $(".login-form").validate({
 		}
 	}
 });
+
+$(function() {
+
+
+});

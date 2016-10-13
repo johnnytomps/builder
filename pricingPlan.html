@@ -20,14 +20,11 @@
 
     <div class="container">
         <div id="update-pricing-plan-page">
-            <h1>Let's Update Pricing Plan(s)!<h1>
-            <ul class="collapsible" data-collapsible="accordian">
-                <li>
-                    <div class="update-header collapsible-header">Select an option</div>
-                </li>
+            <h1>Let's Update Pricing Plan(s)!</h1>
+            <ul class="collapsible popout" data-collapsible="accordion">
                 <li>
                     <div class="update-header collapsible-header"><i class="material-icons">important_devices</i>Delivery Capabilities</div>
-                    <div class="collapsible-body">
+                    <div class="collapsible-body clearfix">
                         <form action="#">
                             <div class="dc-select-left">
                                 <!-- PC/Mac -->
@@ -81,6 +78,10 @@
                                     <input type="checkbox" id="android-phone-SD-download" />
                                     <label for="android-phone-HD-streaming">Android Phone SD Download</label>
                                 </div>
+
+                            </div>
+                            <div class="dc-select-right">
+                                <!-- Android -->
                                 <div class="dc-select">
                                     <input type="checkbox" id="android-tablet-HD-streaming" />
                                     <label for="android-tablet-HD-streaming">Android Tablet HD Streaming</label>
@@ -97,8 +98,6 @@
                                     <input type="checkbox" id="android-tablet-SD-download" />
                                     <label for="android-tablet-HD-streaming">Android Tablet SD Download</label>
                                 </div>
-                            </div>
-                            <div class="dc-select-right">
                                 <!-- iOS -->
                                 <div class="dc-select">
                                     <input type="checkbox" id="apple-iPhone-HD-streaming" />
@@ -182,9 +181,13 @@
                 </li>
                 <li>
                     <div class="update-header collapsible-header"><i class="material-icons">supervisor_account</i>Targeting Segments</div>
-                    <div class="collapsible-body"><div class="dc-select">Lorem ipsum dolor sit amet.</div></div>
+                    <div class="collapsible-body">
+                        <input id="targeting-segment-id" type="text" class="validate">
+                        <label for="targeting-segment-id">Targeting Segmenet Id</label>
+                    </div>
                 </li>
             </ul>
+            <button class="btn waves-effect waves-light">Submit</button>
         </div>
     </div>
 

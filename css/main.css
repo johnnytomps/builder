@@ -51,6 +51,9 @@ textarea {
     padding: 0.2em 0;
 }
 
+h1 {
+    font-size: 1em;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -72,8 +75,12 @@ textarea {
     text-align: left;
     font-size: 18px;
 }
+.collapsible-body {
+    padding: 15px 0;
+}
 /*** Select page style ***/
-#select-type-page {
+#select-type-page,
+#define-selection-page {
     position: fixed;
     width: 800px;
     height: 500px;
@@ -81,6 +88,7 @@ textarea {
     left: 50%;
     margin-top: -250px; /* Negative half of height. */
     margin-left: -400px; /* Negative half of width. */
+    text-align: center;
 }
 
 /*** Update pricing plan page ***/
@@ -90,11 +98,15 @@ textarea {
     left: 50%;
     margin-top: 50px;
     margin-left: -400px; /* Negative half of width. */
+    text-align: center;
 }
-#update-pricing-plan-page .collapsible-body {
+#update-pricing-plan-page button{
+    margin-top: 15px;
+}
+/*#update-pricing-plan-page .collapsible-body {
     max-height: 400px;
     overflow-y: scroll;
-}
+}*/
 .dc-select-left,
 .dc-select-right {
     width: 50%;
