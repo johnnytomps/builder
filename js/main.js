@@ -18,7 +18,7 @@ function navigate(template, searchSubmitState) {
     else if (currentTemplate == 'contentItems'){
         confirmationText = 'You\'re about to update the following attributes on the selected pricing plans:';
         if ($('.media-quality-wrapper').length == 1){ confirmationAttributes += '&&Content Item Quality'};
-        if ($('.media-item-type-wrapper').length == 1){ confirmationAttributes += '&Ccontent Item Type'};
+        if ($('.media-item-type-wrapper').length == 1){ confirmationAttributes += '&&Content Item Type'};
         if ($('.media-item-subtype-wrapper').length == 1){ confirmationAttributes += '&&Content Item Subtype'};
         if ($('.media-cc-wrapper').length == 1){ confirmationAttributes += '&&Content Item Instream Closed Captions' };
     }
