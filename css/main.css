@@ -1,28 +1,28 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 audio,
@@ -31,61 +31,62 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
 h1 {
-    font-size: 1em;
+	font-size: 1em;
 }
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 /*** General styles ***/
 
 .container h1 {
-    text-align: center;
-    font-weight: bold;
-    max-width: 600px;
-    margin: 0 auto;
-    padding-bottom: 30px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-bottom: 30px;
 }
+
 .dropdown-button {
-    font-size: 24px;
+	font-size: 24px;
 }
+
 .update-header {
-    text-align: left;
-    font-size: 18px;
+	text-align: left;
+	font-size: 18px;
 }
+
 .collapsible-body {
-    padding: 15px 0;
+	padding: 15px 0;
 }
+
 .collapsible-header i.close-icons {
-    float: right;
-    margin-right: 0px;
-    color: #cccccc;
+	float: right;
+	margin-right: 0px;
+	color: #cccccc;
 }
-/*** Select page style ***/
-#select-type-page,
-#define-selection-page {
+/*** Login page ***/
+#login-page {
     position: fixed;
     width: 800px;
     height: 500px;
@@ -93,230 +94,270 @@ h1 {
     left: 50%;
     margin-top: -250px; /* Negative half of height. */
     margin-left: -400px; /* Negative half of width. */
-    text-align: center;
+}
+/*** Select page style ***/
+
+#select-type-page,
+#search-page {
+	position: fixed;
+	width: 800px;
+	height: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	/* Negative half of height. */
+	
+	margin-left: -400px;
+	/* Negative half of width. */
+	
+	text-align: center;
 }
 /*** Search ***/
-.search-wrapper{
+<<<<<<< HEAD
+
+#search-results, #search-submit-button {
+	display: none;
+}
+
+#search-page .search-wrapper i {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+=======
+.card.search-wrapper{
     padding: 10px 30px;
     height: 60px;
     line-height: 60px;
-}
-#search {
-    border: 0px;
-    line-height: 40px;
-    height: 40px;
-    margin: 0px;
-    padding: 0px;
- }
-.search-wrapper input:focus {
-    border: 0px;
-    line-height: 60px;
-}
-/*** Update pricing plan page ***/
-#update-pricing-plan-page {
-    position: fixed;
-    width: 800px;
-    left: 50%;
-    margin-top: 50px;
-    margin-left: -400px; /* Negative half of width. */
-    text-align: center;
-}
-#update-pricing-plan-page button{
-    margin-top: 15px;
+>>>>>>> origin/develop
 }
 
+#search {
+	border: 0px;
+	line-height: 40px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+.search-wrapper input:focus {
+	border: 0px;
+	line-height: 60px;
+}
+/*** Update pricing plan page ***/
+
+#update-pricing-plan-page {
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -400px;
+	/* Negative half of width. */
+	
+	text-align: center;
+}
+
+#update-pricing-plan-page button {
+	margin-top: 15px;
+}
 /*#update-pricing-plan-page .collapsible-body {
     max-height: 400px;
     overflow-y: scroll;
 }*/
+
 .dc-select-left,
 .dc-select-right {
-    width: 50%;
-    float: left;
-}
-.dc-select {
-    height: 30px;
-    line-height: 30px;
-    text-align: left;
-    margin-left: 15px;
-}
-.pricing-option-select {
-    height: 30px;
-    line-height: 30px;
-    text-align: left;
-    margin-left: 15px;
+	width: 50%;
+	float: left;
 }
 
+.dc-select {
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.pricing-option-select {
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	margin-left: 15px;
+}
+/*** Login Page ***/
+
+#login-page .login-form {
+	padding-top: 20px !important;
+}
 /*** Update content item page ***/
+
 #update-content-item-page {
-    position: fixed;
-    width: 800px;
-    left: 50%;
-    margin-top: 50px;
-    margin-left: -400px; /* Negative half of width. */
-    text-align: center;
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -400px;
+	/* Negative half of width. */
+	
+	text-align: center;
 }
-#update-content-item-page button{
-    margin-top: 15px;
+
+#update-content-item-page button {
+	margin-top: 15px;
 }
+
 .media-quality div,
+<<<<<<< HEAD
+.instream-cc div {
+	display: inline;
+=======
 .instream-cc div{
     display: inline;
+    margin-right: 15px;
+>>>>>>> origin/develop
 }
 
 /*** Confirmation Page ***/
+
 #confirmation-page {
-    position: fixed;
-    width: 800px;
-    left: 50%;
-    margin-top: 50px;
-    margin-left: -400px; /* Negative half of width. */
-    text-align: center;
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -400px;
+	/* Negative half of width. */
+	
+	text-align: center;
 }
-#confirmation-page button{
-    margin-top: 15px;
+
+#confirmation-page button {
+	margin-top: 15px;
+}
+.confirmation-attributes {
+    font-weight: bold;
 }
 /*** Revert Page ***/
+
 #revert-page {
-    position: fixed;
-    width: 800px;
-    left: 50%;
-    margin-top: 50px;
-    margin-left: -400px; /* Negative half of width. */
-    text-align: center;
+	position: fixed;
+	width: 800px;
+	left: 50%;
+	margin-top: 50px;
+	margin-left: -400px;
+	/* Negative half of width. */
+	
+	text-align: center;
 }
-#revert-page button{
-    margin-top: 15px;
+
+#revert-page button {
+	margin-top: 15px;
 }
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
-}
+@media only screen and (min-width: 35em) {}
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
-
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+	display: none !important;
+	visibility: hidden;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
 }
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
-
 /* ==========================================================================
    Print styles
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }

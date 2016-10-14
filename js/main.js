@@ -4,9 +4,24 @@ $(document).ready(function () {
 
 var currentTemplate = '',
 	searchSubmitTemplate = '',
-	templateContainer = $('#template');
+	templateContainer = $('#template'),
+    confirmationText,
+    confirmationAttributes = '';
 
 function navigate(template, searchSubmitState) {
+    if (currentTemplate == 'pricingPlan'){
+        confirmationText = 'You\'re about to update the following attributes on the selected pricing plans:';
+        if ($('.delivery-capabilities-wrapper').length == 1){ confirmationAttributes += 'Delivery Capabilities'};
+        if ($('.pricing-options-wrapper').length == 1){ confirmationAttributes += '&&Pricing Options'};
+        if ($('.pricing-targeting-segmentation-wrapper').length == 1){ confirmationAttributes += '&&Targeting Segments'};
+    }
+    else if (currentTemplate == 'contentItems'){
+        confirmationText = 'You\'re about to update the following attributes on the selected pricing plans:';
+        if ($('.media-quality-wrapper').length == 1){ confirmationAttributes += '&&Content Item Quality'};
+        if ($('.media-item-type-wrapper').length == 1){ confirmationAttributes += '&Ccontent Item Type'};
+        if ($('.media-item-subtype-wrapper').length == 1){ confirmationAttributes += '&&Content Item Subtype'};
+        if ($('.media-cc-wrapper').length == 1){ confirmationAttributes += '&&Content Item Instream Closed Captions' };
+    }
 	currentTemplate = template;
 	searchSubmitTemplate = searchSubmitState;
 	templateContainer.effect('slide', {
@@ -22,11 +37,24 @@ function navigate(template, searchSubmitState) {
 			}, 250);
 			$(document).unbind();
 			if (typeof window[template] === 'function') {
-				window[template]();	
-			}			
+				window[template]();
+			}
 		}
 	})
 };
+
+function getSearchResults() {
+	if (searchSubmitTemplate) {
+		var resultsTemplate = $('#search-results-' + searchSubmitTemplate).html();
+		$('#search-page #search-results').append(resultsTemplate).effect('slide', {
+			direction: 'up',
+			mode: 'show'
+		}, 250);
+		$('#search-button').fadeOut();
+		$('#search-submit-button').fadeIn();
+		
+	}
+}
 
 function login() {
 	Materialize.updateTextFields();
@@ -79,11 +107,60 @@ function selectType() {
 };
 
 function search() {
-	
+
 };
 
 function pricingPlan() {
-	$('.collapsible').collapsible({
-		accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-	});
+    $('.collapsible').collapsible({
+        accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $(document).on('click','.close-icons',function(e){
+        e.preventDefault();
+        $(this).parents('li').remove();
+    });
+
 };
+
+function contentItems() {
+    $('.collapsible').collapsible({
+        accordion: true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $('.item-type-dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    });
+    $('.item-subtype-dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrain_width: false, // Does not change width of dropdown to that of the activator
+        hover: true, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    });
+    $(document).on('click','.close-icons',function(e){
+        e.preventDefault();
+        $(this).parents('li').remove();
+    });
+};
+
+function confirmation(){
+    $('.confirmation-text').text(confirmationText);
+    attributeArray = confirmationAttributes.split('&&');
+    for(var i = 0; i < attributeArray.length; i++){
+        $('.confirmation-attributes-wrapper').append('<p class="confirmation-attributes">'+ attributeArray[i] +'</p>');
+    }
+}
+
+function revert(){
+    $(document).on('click','.revert-button',function(){
+        $('.revert-button, h1, p').fadeOut( 500, function() {
+            $('.revert-confirmation-text').fadeIn( 500 )
+        });
+    });
+}
