@@ -120,10 +120,10 @@ h1 {
 }
 
 #search-page .search-wrapper i {
-	position: absolute;
-	right: 10px;
-	top: 20px;
-
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
 .card.search-wrapper{
     padding: 10px 30px;
     height: 60px;
