@@ -33,32 +33,34 @@
 	</div>
 
 	<script id="login" type="text/x-custom-template">
-		<div class="col s12" style="display: none;">
-			<h2 class="center-align teal-text">Ascendon Updater</h2>
-		</div>
-		<div class="row">
-			<div class="col s12 m6 offset-m3">
-				<form class="col s12 card-panel hoverable login-form">
-					<div class="row">
-						<div class="input-field col s12">
-							<input placeholder="Login" id="login" name="login" type="text" class="validate">
-							<label for="login">Login</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input placeholder="Password" id="password" name="password" type="password" class="validate" maxlength="10" length="10">
-							<label for="password">Password</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12 right-align">
-							<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
+        <div class="row" id="" style="display: none;">
+            <div class="col s12" style="display: none;">
+                <h2 class="center-align teal-text">Ascendon Updater</h2>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 offset-m3">
+                    <form class="col s12 card-panel hoverable login-form">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Login" id="login" name="login" type="text" class="validate">
+                                <label for="login">Login</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="Password" id="password" name="password" type="password" class="validate" maxlength="10" length="10">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 right-align">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 	</script>
 
 	<script id="selectType" type="text/x-custom-template">
@@ -98,7 +100,7 @@
         <div id="update-pricing-plan-page" class="row" style="display: none;">
             <h1>Pricing Plan Update</h1>
             <ul class="collapsible popout" data-collapsible="accordion">
-                <li>
+                <li class="delivery-capabilities-wrapper">
                     <div class="update-header collapsible-header">
                         <i class="material-icons">important_devices</i>
                         Delivery Capabilities
@@ -122,7 +124,7 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="silverlight-SD-download" />
-                                    <label for="mac-HD-streaming">Silverlight SD Download</label>
+                                    <label for="silverlight-SD-download">Silverlight SD Download</label>
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="mac-HD-streaming" />
@@ -138,7 +140,7 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="mac-SD-download" />
-                                    <label for="mac-HD-streaming">Mac SD Download</label>
+                                    <label for="mac-SD-download">Mac SD Download</label>
                                 </div>
 
                                 <!-- Android -->
@@ -156,7 +158,7 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="android-phone-SD-download" />
-                                    <label for="android-phone-HD-streaming">Android Phone SD Download</label>
+                                    <label for="android-phone-SD-download">Android Phone SD Download</label>
                                 </div>
 
                             </div>
@@ -176,7 +178,7 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="android-tablet-SD-download" />
-                                    <label for="android-tablet-HD-streaming">Android Tablet SD Download</label>
+                                    <label for="android-tablet-SD-download">Android Tablet SD Download</label>
                                 </div>
                                 <!-- iOS -->
                                 <div class="dc-select">
@@ -193,7 +195,7 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="apple-iPhone-SD-download" />
-                                    <label for="apple-iPhone-HD-streaming">Apple iPhone SD Download</label>
+                                    <label for="apple-iPhone-SD-download">Apple iPhone SD Download</label>
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="apple-iPad-HD-streaming" />
@@ -209,13 +211,13 @@
                                 </div>
                                 <div class="dc-select">
                                     <input type="checkbox" id="apple-iPad-SD-download" />
-                                    <label for="apple-iPad-HD-streaming">Apple iPad SD Download</label>
+                                    <label for="apple-iPad-SD-download">Apple iPad SD Download</label>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </li>
-                <li>
+                <li class="pricing-options-wrapper">
                     <div class="update-header collapsible-header">
                         <i class="material-icons">lightbulb_outline</i>
                         Options
@@ -263,7 +265,7 @@
                         </form>
                     </div>
                 </li>
-                <li>
+                <li class="pricing-targeting-segmentation-wrapper">
                     <div class="update-header collapsible-header">
                         <i class="material-icons">supervisor_account</i>
                         Targeting Segments
@@ -278,14 +280,127 @@
             <button class="btn waves-effect waves-light" onclick="navigate('confirmation');">Submit</button>
         </div>
 	</script>
-	
+
+    <script id="contentItems" type="text/x-custom-template">
+        <div id="update-content-item-page">
+            <h1>Content Item Update</h1>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li class="media-quality-wrapper">
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">perm_media</i>
+                        Media Quality
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="media-quality">
+                                <div>
+                                    <input name="media-quality" type="radio" id="media-quality-hd" />
+                                    <label for="media-quality-hd">HD</label>
+                                </div>
+                                <div>
+                                    <input name="media-quality" type="radio" id="media-quality-sd" />
+                                    <label for="media-quality-sd">SD</label>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="media-item-type-wrapper">
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">title</i>
+                        Item Type
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="item-type">
+                                <a class='item-type-dropdown-button btn' href='#' data-activates='item-type'>Item Type</a>
+                                <!-- Dropdown Structure -->
+                                <ul id='item-type' class='dropdown-content'>
+                                    <li><a href="#!">Applications</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Audio</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">External URL</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Image</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Video</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="media-item-subtype-wrapper">
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">text_fields</i>
+                        Item Subtype
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="item-subtype">
+                                <a class='item-subtype-dropdown-button btn' href='#' data-activates='item-subtype'>Item Subtype</a>
+                                <!-- Dropdown Structure -->
+                                <ul id='item-subtype' class='dropdown-content'>
+                                    <li><a href="#!">Live Video Stream</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Preview</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#!">Trailer</a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="media-cc-wrapper">
+                    <div class="update-header collapsible-header">
+                        <i class="material-icons">sms</i>
+                        Instream Closed Captions
+                        <i class="material-icons close-icons">close</i>
+                    </div>
+                    <div class="collapsible-body clearfix">
+                        <form action="#">
+                            <div class="instream-cc">
+                                <div>
+                                    <input name="instream-cc" type="radio" id="instream-cc-yes" />
+                                    <label for="instream-cc-yes">Yes</label>
+                                </div>
+                                <div>
+                                    <input name="instream-cc" type="radio" id="instream-cc-no" />
+                                    <label for="media-quality-hd">No</label>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn waves-effect waves-light" onclick="navigate('confirmation');">Submit</button>
+        </div>
+    </script>
+
 	<script id="confirmation" type="text/x-custom-template">
         <div id="confirmation-page" class="row" style="display: none;">
-            <h1>Check Your Work.</h1>
-            <p>You're about to apply xxx to xxx</p>
-            <button class="btn waves-effect waves-light">Submit</button>
+            <h1>Check Your Work</h1>
+            <p class="confirmation-text"></p>
+            <div class="confirmation-attributes-wrapper"></div>
+            <button class="btn waves-effect waves-light" onclick="navigate('revert');">Submit</button>
         </div>
 	</script>
+
+    <script id="revert" type="text/x-custom-template">
+        <div class="container">
+            <div id="revert-page">
+                <h1>Great Success!</h1>
+                <p>Make a mistake?</p>
+                <button class="btn waves-effect waves-light revert-button">Revert</button>
+                <div class="revert-confirmation-text" style="display:none">*whew* Looks like no one saw that! Have yourself a beer and try again.</div>
+            </div>
+        </div>
+    </script>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script>

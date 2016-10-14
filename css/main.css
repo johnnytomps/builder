@@ -83,6 +83,16 @@ h1 {
     margin-right: 0px;
     color: #cccccc;
 }
+/*** Login page ***/
+#login-page {
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px; /* Negative half of height. */
+    margin-left: -400px; /* Negative half of width. */
+}
 /*** Select page style ***/
 #select-type-page,
 #define-selection-page {
@@ -96,7 +106,7 @@ h1 {
     text-align: center;
 }
 /*** Search ***/
-.search-wrapper{
+.card.search-wrapper{
     padding: 10px 30px;
     height: 60px;
     line-height: 60px;
@@ -162,6 +172,7 @@ h1 {
 .media-quality div,
 .instream-cc div{
     display: inline;
+    margin-right: 15px;
 }
 
 /*** Confirmation Page ***/
@@ -175,6 +186,9 @@ h1 {
 }
 #confirmation-page button{
     margin-top: 15px;
+}
+.confirmation-attributes {
+    font-weight: bold;
 }
 /*** Revert Page ***/
 #revert-page {
