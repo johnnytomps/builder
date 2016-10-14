@@ -50,9 +50,8 @@ function getSearchResults() {
 			direction: 'up',
 			mode: 'show'
 		}, 250);
-		$('#search-button').fadeOut();
-		$('#search-submit-button').fadeIn();
-		
+		$('#search-button').hide();
+		$('#search-submit-button').show();
 	}
 }
 
